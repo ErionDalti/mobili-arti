@@ -650,6 +650,47 @@ textarea:focus {
   margin-top: 1rem;
 }
 
+.footer-social {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.35rem;
+}
+
+.footer-social a {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  place-items: center;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.footer-social a:nth-child(2) svg {
+  fill: currentColor;
+  stroke: none;
+}
+
 .footer__copy {
   grid-column: 1 / -1;
   padding-top: 1.5rem;
@@ -670,9 +711,13 @@ textarea:focus {
   background: #1f9d55;
   border-radius: 50%;
   box-shadow: 0 18px 45px rgba(31, 157, 85, 0.32);
-  font-size: 0.86rem;
-  font-weight: 950;
   transition: transform 0.2s ease;
+}
+
+.whatsapp-float svg {
+  width: 31px;
+  height: 31px;
+  fill: currentColor;
 }
 
 .js .reveal {
